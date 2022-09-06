@@ -1,0 +1,140 @@
+@charset "euc-kr";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+/* CSS Document */
+
+img {border:0px;}
+
+body {background-color:#FFFFFF; margin-left:0px; margin-right:0px; margin-top:0px; margin-bottom:0px; font-family: malgun gothic, dotum, sans-serif; font-size: 11px;}
+
+
+/* BG가 있을 경우 경로설정 */ 
+
+.mainbg {
+        background-position: center top;
+	background-image: url(/gnuboard4/images/mainbg.jpg);
+	background-repeat: no-repeat;
+}
+.subbg {
+        background-position: center top;
+	background-image: url(/gnuboard4/images/subbg.jpg);
+	background-repeat: no-repeat;
+}
+
+/* 공통 */
+.copy {
+	background-color:#000000;
+	filter:alpha(opacity=60); opacity:0.6; -moz-opacity:0.6;
+	height:80px;
+}
+.copyaddress {
+	color:#727272;
+	font-size:11px;
+}
+.line {
+	background-color:#cccccc;
+	height:1px;
+}
+
+/* 서브 */
+.line01 {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #898989;
+}
+.line02 {
+	background-color:#666666;
+	height:1px;
+}
+.line03 {
+	background-color:#666666;
+	height:2px;
+}
+.subtitle {
+	color:#939393;
+	font-size:11px;
+	letter-spacing:-1px;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-family: malgun gothic, dotum, sans-serif;
+}
+#tonavi {
+	color:#939393;
+	font-size:11px;
+	padding-left:10px;
+	font-family: malgun gothic, dotum, sans-serif;
+	text-decoration:none;
+}
+
+#tonavi a{
+	color:#939393;
+	font-size:11px;
+	padding-left:10px;
+	font-family: malgun gothic, dotum, sans-serif;
+	text-decoration:none;
+}
+
+.titlenavi {
+	color:#939393;
+	font-size:11px;
+	font-family: malgun gothic, dotum, sans-serif;
+}
+
+.titlenavi2 {
+	color:#939393;
+	font-size:11px;
+	font-family: malgun gothic, dotum, sans-serif;
+	letter-spacing:-1px;
+	padding-left:10px;
+}
+
+.title { font-size:25px; color:#333333; text-align:left; font-family: malgun gothic, dotum, sans-serif; letter-spacing:-2px;}
+.title2 { font-size:20px; color:#333333; text-align:left; font-family: batang, sans-serif; letter-spacing:-2px; line-height:40px; font-weight:bold;}
+.bigtitle {font-family: malgun gothic, dotum, sans-serif; font-size:20px; color:#333333; text-align:left; letter-spacing:-1px; }
+
+
+
+
+
+/* submenu시작 */ 
+/*submenu*/
+#submenu a{font-family:Nanum Gothic, 나눔고딕, sans-serif; text-decoration:none; color:#000000; font-size:11px; font-weight:800; width:176px; height:27px; line-height:27px; float:left;padding:0px 0px 2px 20px;}
+#submenu a:hover{color:#ffffff; font-size:11px; font-weight:800; padding:0px 0px 2px 20px; background:url(/gnuboard4/images/leftmenubg.jpg) left top no-repeat;}
+
+
+/*subSubmenu*/
+.ssm01, .ssm02, .ssm03, .ssm04, .ssm05 {display:none;}
+
+/* 하위메뉴 보이게 */
+#ssm0101 .ssm01{display:block;}
+#ssm0102 .ssm02{display:block;}
+#ssm0103 .ssm03{display:block;}
+#ssm0104 .ssm04{display:block;}
+#ssm0105 .ssm05{display:block;}
+
+
+/* 하위메뉴 스타일 */
+#submenu div a{ background:url(/gnuboard4/images/ssmbg.jpg) left top no-repeat; color:#111111; font-size:12px; padding-left:20px; height:25px; line-height:25px; }
+#submenu div a:hover{ background:url(/gnuboard4/images/ssmbg_on.jpg) left top no-repeat; color:#ffffff; }
+
+
+/* submenu끝 */ 
+
+
+
+.stext {font-family:Nanum Gothic, 나눔고딕,  sans-serif; font-size:13px; color:#5a5a5a; line-height:140%;}
+.stext b{color:#4ca215;}
+
+.stitle {font-family: 'Nanum Myeongjo', serif; font-size:24px; color:#5a5a5a; line-height:140%; font-weight:bold;} .stitle b{color:#4ca215;}
+.stitle2 {font-family: 'Nanum Myeongjo', serif; font-size:15px; color:#bbbbbb;}
+.stitle3 {font-family: 'Nanum Myeongjo', serif; font-size:13px; color:#bbbbbb; line-height:30px;}
+
+.s0102 {width:751px; font-size:15px; line-height:15px;}
+.s0102-1 {padding:73px 0px 0px 246px;}
+.s0102-2 {padding:35px 0px 0px 307px;}
+.s0102-3 {padding:45px 0px 0px 335px;}
+.s0102-4 {padding:45px 0px 0px 348px;}
+.s0102-5 {padding:45px 0px 0px 335px;}
+.s0102-6 {padding:45px 0px 0px 307px;}
+.s0102-7 {padding:35px 0px 0px 246px;}
+

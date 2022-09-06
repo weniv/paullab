@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BookService</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+		<style>
+		.some-class-name.navbar-custom .dropdown-menu  li a {
+		  color:#888686;
+		}
+
+		.some-class-name.navbar-custom .dropdown-menu  li a:hover,
+		.some-class-name.navbar-custom .dropdown-menu  li a:focus,
+		.some-class-name.navbar-custom .dropdown-menu  li a:active,
+		.some-class-name.navbar-custom .dropdown-menu  li a.active {
+		  color:#fff;
+		}
+
+		.profile {
+			text-align: center;
+			font-family: 'Lora';
+			margin-bottom: 20px;
+		}
+
+		.profile img {
+			padding: 10px;
+		}
+
+		.profile #borderneeded {
+			border-top: 2px solid black;
+		}
+
+		.profile-container {
+			margin-top: 130px;
+		}
+
+    .home:hover {
+      color: #ffffff;
+      text-decoration: none;
+    }
+	   </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default some-class-name navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html"><img src="img/logo.png" alt="(재)제주이주지원센터" width=200px align="left"/></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html"> Home </a>
+                    </li>
+                    <li>
+                        <a href="about.html"> About </a>
+                    </li>
+					          <li>
+                        <a href="roadmap.html"> Roadmap </a>
+                    </li>
+					          <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Book<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+						                <li>
+                                <a href="rurple.html">&nbsp;러플_Python</a>
+                            </li>
+                            <li>
+                                <a href="scratch.html">&nbsp;스크래치</a>
+                            </li>
+                            <li>
+                                <a href="entry.html">&nbsp;엔트리</a>
+                            </li>
+                            <li>
+                                <a href="entry_python.html">&nbsp;엔트리_Python</a>
+                            </li>
+							              <li>
+                                <a href="web_1.html">&nbsp;Web 개발 1</a>
+                            </li>
+							              <li>
+                                <a href="web_2.html">&nbsp;Web 개발 2</a>
+                            </li>
+							              <li>
+                                <a href="python.html">&nbsp;Python</a>
+                            </li>
+							              <li>
+                                <a href="python_al.html">&nbsp;Python_알고리즘</a>
+                            </li>
+							              <li>
+                                <a href="java.html">&nbsp;JAVA</a>
+                            </li>
+							              <li>
+                                <a href="python_se.html">&nbsp;Python_정보보안</a>
+                            </li>
+							              <li>
+                                <a href="raspberry.html">&nbsp;라즈베리파이</a>
+                            </li>
+							              <li>
+                                <a href="arduino.html">&nbsp;아두이노</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/home.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                      <a href="index.html" style="color: #ffffff;" class="home">
+                        <h3>Paul_lab_Edu</h3>
+                        <hr class="small">
+                        <span class="subheading"><h4>당신의 꿈을 위하여</h4></span>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content1 -->
+    <div class="container">
+        <!-- chapter introduction -->
+        <div class="chapter" style="text-align: center;">
+            <h3 style="font-size: 35px; margin-bottom: 30px;">엔트리_PYTHON</h3>
+        </div>
+        <div class="row" style="text-align: center;">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				      <iframe width="640" height="360" src="https://www.youtube.com/embed/y1O740pa16E" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+    <!-- Main Content2 -->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-1">
+            </div>
+        </div>
+    </div> -->
+
+	  <br />
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://www.facebook.com/paullabkr/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">
+                      Mail : paul-lab@naver.com<br />
+                      copyright &copy;2017 paullab all rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

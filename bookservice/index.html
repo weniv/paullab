@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BookService</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+		<style>
+		.some-class-name.navbar-custom .dropdown-menu  li a {
+		  color:#888686;
+		}
+
+		.some-class-name.navbar-custom .dropdown-menu  li a:hover,
+		.some-class-name.navbar-custom .dropdown-menu  li a:focus,
+		.some-class-name.navbar-custom .dropdown-menu  li a:active,
+		.some-class-name.navbar-custom .dropdown-menu  li a.active {
+		  color:#fff;
+		}
+
+		.profile {
+			text-align: center;
+			font-family: 'Lora';
+			margin-bottom: 20px;
+		}
+
+		.profile img {
+			padding: 10px;
+		}
+
+		.profile #borderneeded {
+			border-top: 2px solid black;
+		}
+
+		.profile-container {
+			margin-top: 130px;
+		}
+
+    .home:hover {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+	  </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default some-class-name navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">
+                  <img src="img/logo.png" alt="(재)제주이주지원센터" width=200px align="left" style="cursor: pointer;"/>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html"> Home </a>
+                    </li>
+                    <li>
+                        <a href="about.html"> About </a>
+                    </li>
+          					<li>
+                        <a href="roadmap.html"> Roadmap </a>
+                    </li>
+          					<li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Book<b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+						                  <li>
+                                  <a href="https://ridibooks.com/v2/Detail?id=2773000023">&nbsp;메모혁신 Notion(노션) 활용 가이드</a>
+                              </li>
+                              <li>
+                                  <a href="https://ridibooks.com/v2/Detail?id=2773000025">&nbsp;제주코딩베이스캠프 코드페스티벌 Python 100제 1부</a>
+                              </li>
+                              <li>
+                                  <a href="https://ridibooks.com/v2/Detail?id=2773000005">&nbsp;튜토리얼로 배우는 HTML&CSS</a>
+                              </li>
+                              <li>
+                                  <a href="https://ridibooks.com/v2/Detail?id=2773000007">&nbsp;코딩도장 튜토리얼로 배우는 Python 1편</a>
+                              </li>
+              							  <li>
+                                  <a href="https://ridibooks.com/v2/Detail?id=2773000008">&nbsp;코딩도장 튜토리얼로 배우는 Python 2편</a>
+                              </li>
+              							  <li>
+                                  <a href="https://ridibooks.com/v2/Detail?id=2773000011">&nbsp;코딩도장 튜토리얼로 배우는 Python 문제풀이</a>
+                              </li>
+              							  <li>
+                                  <a href="https://ridibooks.com/v2/Detail?id=2773000015">&nbsp;타노스의 건틀릿 알고리즘 With Python</a>
+                              </li>
+              							  <li>
+                                  <a href="https://ridibooks.com/v2/Detail?id=2773000020">&nbsp;xlsxwriter 튜토리얼로 배우는 Python 엑셀 프로그래밍</a>
+                              </li>
+              							  <li>
+                                  <a href="https://ridibooks.com/v2/Detail?id=2773000022">&nbsp;인공지능을 활용한 업무자동화 With Google Developers Group JEJU</a>
+                              </li>
+              							  <li>
+                                  <a href="https://ridibooks.com/v2/Detail?id=2773000002">&nbsp;2017 제주 코딩 해커톤 Django 트랙 상편 1권</a>
+                              </li>
+                          </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/home.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                      <a href="index.html" style="color: #ffffff;" class="home">
+                        <h3>Paul_lab_Edu</h3>
+                        <hr class="small">
+                        <span class="subheading"><h4>당신의 꿈을 위하여</h4></span>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+	  <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			        <h3>Home</h3>
+			        <img src="img/sdot.jpg" style="width: 80px; height: 40px;"/><br />
+			        <p>교재는 전자책으로만 출판됩니다. 종이책 맞춤 제작을 원하시는 기관 및 학교는 <br><strong>E-mail : paul-lab@naver.com</strong> 으로 연락주세요. 감사합니다.</p>
+            </div>
+        </div>
+    </div>
+
+	  <br />
+	  <hr />
+	  <br />
+
+    <!-- Main Content1 -->
+    <div class="container book_contents">
+        <div class="row" style="margin-bottom: 50px;">
+            <div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-1">
+				      <a href="https://ridibooks.com/v2/Detail?id=2773000023"><img src="img/notion.jpg" class="img-responsive book_cover"></a>
+            </div>
+			      <div class="col-lg-6 col-md-8 book_detail">
+				      <h2 class="book_name" style="margin-top: 0;">메모혁신 Notion(노션) 활용 가이드</h2>
+				      <p class="book_info" style="margin-bottom: 0;">Notion의 기본 사용 방법부터 Notion을 활용한 홈페이지 제작 방법까지 다양하게 다루고 있으며 특히 개발자가 원하는 Notion의 활용 방법을 다루고 있습니다.
+                            이미 Notion에 친숙하시거나 원하는 목표가 확실하시다면 순서대로 보시기 보다는 해당 목적에 맞는 목차만 보시길 추천해 드립니다.
+                            이 책이 여러분의 귀한 시간을 절약 해줄 것임을 확신합니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <!-- Main Content2 -->
+    <div class="container book_contents">
+        <div class="row" style="margin-bottom: 50px;">
+            <div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-1">
+				      <a href="https://ridibooks.com/v2/Detail?id=2773000025"><img src="img/cofe.jpg" class="img-responsive book_cover"></a>
+            </div>
+			      <div class="col-lg-6 col-md-8 book_detail">
+                    <h2 class="book_name" style="margin-top: 0;">제주코딩베이스캠프 Code Festival: Python 100제 1부</h2>
+                    <p class="book_info" style="margin-bottom: 0;">
+                        파이썬으로 풀 수 있는 100문제를 만들었습니다. 50문제씩 1부(초급, 중급)와 2부(중급, 고급)로 나누어져있습니다.<br/>
+                        1-50번 까지의 문제가 있습니다.
+                        파이썬 기초를 다시한번 돌아보기 좋은 문제들로 구성되어있습니다.
+                        입문자들에게 추천합니다.
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <!-- Main Content3 -->
+    <div class="container book_contents">
+        <div class="row" style="margin-bottom: 50px;">
+            <div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-1">
+				      <a href="https://ridibooks.com/v2/Detail?id=2773000005"><img src="img/HTMLCSS.jpg" class="img-responsive book_cover"></a>
+            </div>
+			      <div class="col-lg-6 col-md-8 book_detail">
+				      <h2 class="book_name" style="margin-top: 0;">튜토리얼로 배우는 HTML&CSS</h2>
+				      <p class="book_info" style="margin-bottom: 0;">튜토리얼을 통해 일단 만들어 봅시다!
+                            무엇이든 일단 만들어 보면 길이 보이기 시작합니다. 그 다음 웹 동작방법, 태그의 동작 방식, 브라우저 렌더링 엔진 등에 대하여 부담이 되지 않을 만큼씩 배워가세요.
+                            깊이 있는 책은 아니어도 방향키가 되어줄 책이 될 것이라 확신합니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <!-- Main Content4 -->
+    <div class="container  book_contents">
+        <div class="row" style="margin-bottom: 50px;">
+            <div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-1">
+				      <a href="https://ridibooks.com/v2/Detail?id=2773000007"><img src="img/python1.jpg" class="img-responsive book_cover"></a>
+            </div>
+			      <div class="col-lg-6 col-md-8 book_detail">
+				      <h2 class="book_name" style="margin-top: 0;">코딩도장 튜토리얼로 배우는 Python 1편 object</h2>
+				      <p class="book_info" style="margin-bottom: 0;">파이썬은 이해하기 쉽고 간결한 문법으로 생산성이 높아 교육을 포함한 다양한 분야 에서 활용되고 있는 언어입니다.
+                            빅데이터 분석, 머신러닝, 웹 개발 등 다양하게 쓰이는 Python을 예제를 통해 배워보세요. 
+                            이 책은 여러 미션을 스토리텔링 형식으로 제공하며 튜토리얼 별로 코드를 제공하여 쉽고 재미있게 코딩 개념을 익힐 수 있도록 도와줄 것입니다.
+                            
+                            * 이 책은 1편 Object, 2편 제어함수, 3편 코딩도장 문제풀이 시리즈로 되어 있습니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <br /><!-- Main Content5 -->
+    <div class="container book_contents">
+        <div class="row" style="margin-bottom: 50px;">
+            <div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-1">
+				      <a href="https://ridibooks.com/v2/Detail?id=2773000008"><img src="img/python2.jpg" class="img-responsive book_cover"></a>
+            </div>
+			      <div class="col-lg-6 col-md-8 book_detail">
+				      <h2 class="book_name" style="margin-top: 0;">코딩도장 튜토리얼로 배우는 python 2편 제어문</h2>
+				      <p class="book_info" style="margin-bottom: 0;">파이썬 튜토리얼 시리즈는<br/>
+                            1편 Object<br/>
+                            2편 제어문<br/>
+                            3편 문제풀이<br/>
+                            
+                            로 구성되어 있습니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <br /><!-- Main Content6 -->
+    <div class="container book_contents">
+        <div class="row" style="margin-bottom: 50px;">
+            <div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-1">
+				      <a href="https://ridibooks.com/v2/Detail?id=2773000011"><img src="img/python3.jpg" class="img-responsive book_cover"></a>
+            </div>
+			      <div class="col-lg-6 col-md-8 book_detail">
+				      <h2 class="book_name" style="margin-top: 0;">코딩도장 튜토리얼로 배우는 Python 문제풀이</h2>
+				      <p class="book_info" style="margin-bottom: 0;">
+                          이 책은 Python 문법을 이제 막 끝낸 분에게 추천해 드립니다. 
+                          코딩도장 사이트에 문제를 풀어보며 Python에 보다 깊게 다가가 보세요.
+                          다양한 문제들이 여러분의 실력을 향상시켜 줄 것입니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <br/>
+    <!-- Main Content7 -->
+    <div class="container book_contents">
+        <div class="row" style="margin-bottom: 50px;">
+            <div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-1">
+				      <a href=""><img src="img/tanos.jpg" class="img-responsive book_cover"></a>
+            </div>
+			      <div class="col-lg-6 col-md-8 book_detail">
+				      <h2 class="book_name" style="margin-top: 0;">타노스의 건틀릿 알고리즘 With Python</h2>
+				      <p class="book_info" style="margin-bottom: 0;">이 책은 Python 문법을 이제 막 끝낸 분에게 추천해 드립니다. 
+                          타노스의 핑거스냅 문제를 다양한 시각으로 풀어보며 Python에 보다 깊게 다가가 보세요. 
+                          다양한 시각이 여러분의 실력을 향상시켜줄 것입니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <!-- Main Content8 -->
+    <div class="container book_contents">
+        <div class="row" style="margin-bottom: 50px;">
+            <div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-1">
+				      <a href="https://ridibooks.com/v2/Detail?id=2773000015"><img src="img/xlsx.jpg" class="img-responsive book_cover"></a>
+            </div>
+			      <div class="col-lg-6 col-md-8 book_detail">
+				      <h2 class="book_name" style="margin-top: 0;">xlsxwriter 튜토리얼로 배우는 Python 엑셀 프로그래밍</h2>
+				      <p class="book_info" style="margin-bottom: 0;">이 책은 빅데이터를 가공하여 엑셀로 가시화 시키기 원하는 업무 담당자와 단순 업무를 Python을 이용하여 자동화 시키려 하는 업무 담당자에게 추천해드립니다. 
+                          또한 부서의 업무 고도화, 효율화를 위해 적절한 자동화 프로그램을 찾지 못한 기업과 학문적 호기심을 가진 개인에게도 추천해 드립니다. 
+                          세계에서 유행중인 Python은 타 언어에 비해 다루기 쉬우며 풍성한 라이브러리로 원하는 프로그램을 직접 만들기에 적합합니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <!-- Main Content9 -->
+    <div class="container book_contents">
+            <div class="row" style="margin-bottom: 50px;">
+                <div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-1">
+                          <a href="https://ridibooks.com/v2/Detail?id=2773000020"><img src="img/ruple.jpg" class="img-responsive book_cover"></a>
+                </div>
+                      <div class="col-lg-6 col-md-8 book_detail">
+                          <h2 class="book_name" style="margin-top: 0;">러플 튜토리얼로 배우는 Python</h2>
+                          <p class="book_info" style="margin-bottom: 0;">이 책은 소프트웨어 교육을 처음 접했거나 스크래치, 
+                              엔트리 등 블록기반 교육용 소프트웨어 다음으로 무엇을 배워야 할 지 모르는 초등학교 학생,
+                              중학교 학생과 소프트웨어 교육을 담당하는 선생님께 권해드립니다.
+                               파이썬 코드로 로봇을 제어하면서 코딩을 쉽게 배울 수 있는 러플은 고급 프로그래밍 언어를 처음 접하는
+                                학생들이 쉽게 언어기반 프로그래밍을 이해할 수 있도록 도와줍니다.</p>
+                </div>
+            </div>
+        </div>
+    
+    <br />
+    <!-- Main Content10 -->
+    <div class="container book_contents">
+        <div class="row" style="margin-bottom: 50px;">
+            <div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-1">
+				      <a href="https://ridibooks.com/v2/Detail?id=2773000022"><img src="img/auto.jpg" class="img-responsive book_cover"></a>
+            </div>
+			      <div class="col-lg-6 col-md-8 book_detail">
+				      <h2 class="book_name" style="margin-top: 0;">인공지능을 활용한 업무자동화 With Google Developers Group JEJU</h2>
+				      <p class="book_info" style="margin-bottom: 0;">이 책은 반복적이고 지루한 단순 업무를 Python을 이용하여 
+                          자동화 시키려 하는 업무 담당자와 데이터를 가공하여 가시화 시키기 원하는 업무 담당자에게 추천해드립니다.
+                           또한 부서의 업무 고도화, 효율화를 위해 적절한 자동화 프로그램을 찾지 못한 기업과 학문적 호기심을 가진 개인에게도 추천해 드립니다. 
+                          세계에서 유행중인 Python은 타 언어에 비해 다루기 쉬우며 풍성한 라이브러리로 원하는 프로그램을 직접 만들기에 적합합니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <!-- Main Content11 -->
+    <div class="container book_contents">
+        <div class="row" style="margin-bottom: 50px;">
+            <div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-1">
+				      <a href="https://ridibooks.com/v2/Detail?id=2773000002"><img src="img/django.jpg" class="img-responsive book_cover"></a>
+            </div>
+			      <div class="col-lg-6 col-md-8 book_detail">
+				      <h2 class="book_name" style="margin-top: 0;">2017 제주 코딩 해커톤 Django 트랙 상편 1권</h2>
+				      <p class="book_info" style="margin-bottom: 0;">이 책은 2017 제주 코딩 해커톤 듀얼트랙(Ruby on Rails, Django) 중
+                           Django 트랙 발표자료로 동영상과 함께 제공됩니다. 판매 수익 전액은 비영리 행사인 제주 코딩 해커톤 운영을 위해 쓰입니다.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://www.facebook.com/paullabkr/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">
+                      Mail : paul-lab@naver.com<br />
+                      copyright &copy;2017 paullab all rights reserved.
+					          </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+.container {
+    width: 700px;
+}
+
+.container-100 {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+}
+
+.sub-title {
+    border-left: 4px solid #7b7b7b;
+    padding-left: 5px;
+}
+
+.user-table {
+    width: 700px;
+    border-top: 3px solid #7b7b7b;
+    border-bottom: 1px solid #7b7b7b;
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.user-table tr {
+    height: 25px;
+}
+
+.user-table td {
+    font-size: 12px;
+    padding: 5px 5px 4px 5px;
+    border-bottom: 1px dotted #cbcbcb;
+    white-space: nowrap;
+}
+
+.search-table {
+    padding: 20px;
+    width: 100%;
+    border-top: 1px solid #7b7b7b;
+    border-bottom: 1px solid #7b7b7b;
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.search-table tr {
+    height: 25px;
+}
+
+.search-table th {
+    font-size: 12px;
+    padding: 5px 5px 4px 5px;
+    background-color: #E8E8E8;
+    text-align: left;
+}
+
+.search-table td {
+    font-size: 12px;
+    padding: 5px 5px 4px 5px;
+}
+
+.list-table {
+    padding: 20px;
+    width: 100%;
+    border-top: 2px solid #7b7b7b;
+    border-bottom: 1px solid #7b7b7b;
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.list-table tr {
+    height: 25px;
+    cursor: pointer;
+}
+
+.list-table tr:hover {
+    background-color: #ddd;
+}
+
+.list-table th {
+    font-size: 11px;
+    padding: 5px 3px 4px 3px;
+    border: 1px solid #cbcbcb;
+    border-bottom: 1px solid #7b7b7b;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #30427d;
+}
+
+.list-table td {
+    font-size: 12px;
+    padding: 5px 5px 4px 5px;
+    border-bottom: 1px dotted #cbcbcb;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.asterisk:after {
+    content: "\002a";
+    padding: 8px 5px 0px;
+    color: #bb162b;
+}
+
+.btn-default {
+    color: inherit;
+    background: white;
+    border: 1px solid #e7eaec;
+    border-radius: 5px;
+}
+
+.btn-default:hover {
+    color: inherit;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #1c84c6;
+    border-color: #1c84c6;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #1a7bb9;
+    border-color: #1a7bb9;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.btn-danger {
+    background-color: #ed5565;
+    border-color: #ed5565;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.btn-danger:hover {
+    background-color: #ec4758;
+    border-color: #ec4758;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.btn-area {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pull-right {
+    right: 0;
+    left: auto;
+    float: right !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Paginate */
+
+.paginate {
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+.paginate * {
+    margin: 0;
+    padding: 0;
+}
+
+.paginate a,
+.paginate strong {
+    font-weight: bold;
+    display: inline-block;
+    padding: 3px 8px 1px 7px;
+    color: #313031;
+    border-right: 1px solid #ccc;
+    text-decoration: none;
+    font: bold 12px arial;
+}
+
+.paginate strong {
+    color: #247bdd !important;
+}
+
+.paginate a:hover {
+    background: #f7f7f7;
+    cursor: pointer;
+}
+
+.paginate .last {
+    border-right-width: 0px;
+}

@@ -1,0 +1,72 @@
+CLI : Command line interface(Linux, Unix)
+GUI : Graphic user interface(Window)
+
+pwd(print working directory) : 현재 경로 보기
+cd(change directory) : 원하는 폴더로 이동
+  1. 디릭토리 이름 (ex. cd python)
+  2. . (ex. cd .)
+  3. .. (ex. cd ..)
+  4. ~ (ex. cd ~)
+
+ls(list) : 디렉토리 목록 보기
+ 1. -a, --all : .을 포함한 경로안에 모든 파일과 디렉토리 표시 (ex. ls -a)
+ 2. -d, --directory : 지정한 디렉토리의 정보 출력 (ex. ls -d)
+ 3. -R, --recursive : 하위 경로와 그 안에 있는 모든 파일들도 같이 나열 (ex. ls -R)
+ 4. -l, format=long : 지정한 디렉토리의 내용을 자세히 출력 (ex. ls -l)
+
+
+mkdir(make directory) : 디렉토리를 만드는 명령
+  1. -p : 필요할 경우 상위 경로까지 생성
+rmdir(remove directory) : 디렉토리를 지우는 명령
+
+
+cp(copy) : 파일  / 디렉토리 복사
+  1. -f, --force : 강제로 복사.(덮어써도 복사)
+  2. -r, -R, --recursive : 디렉토리를 복사할 경우 하위 디렉토리와 파일을 모두 복사한다.
+실행예제) cp       -r      ./test        ./test1
+
+mv(move) : 파일이동, 파일이름변경
+실행예제) mv       ./test/leehojun        ./test1/hojun
+                          원래이름                바꿀이름
+
+
+touch : 빈 파일을 만들어주는 명령어 입니다.
+ex) touch 001.py
+
+
+rm : 파일 및 디렉토리 삭제
+  1. -f, --force : 파일/디렉토리 삭제시 어떻게 처리할지 물어보지 않음
+  2. -r, -R, --recursive : 일반파일이면 그냥 지우고, 디렉토리면 디렉토리를 포함한 하위 경로와 파일을 모두 지운다.
+
+  실행예) rm -rf ./directory
+
+
+1. testone 폴더와 testtwo폴더를 만들어 주세요.
+(mkdir testone testtwo)
+2. testone 폴더 안에 001.html, 002.html, 003.html을 만들어 주세요.
+(touch 001.html 002.html 003.html)
+3. testtwo 폴더 안에 testone 폴더를 복사해 주세요.
+(cp -r ./testone ./testtwo)
+4. 기존에 있던 testone 폴더를 지워주세요.(rm)
+(cd ..)
+(rm -r ./testone)
+5. testtwo/testone/001.html을 100.html로 이름을 변경해 주세요.(mv)
+(cd testtwo/testone)
+(mv 001.html 100.html)
+
+
+cat : 파일 내용 출력
+ 텍스트 파일 내용을 표준 출력장치로 출력하는 명령
+
+
+vi : text 에디터 입니다.
+ex) vi 002.html
+
+
+Ctrl + c는 작업을 강제 종료
+
+
+리눅스 - mac, 안드로이드, 우분투(데비안), cent OS(레드헷)
+
+
+

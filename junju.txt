@@ -1,0 +1,79 @@
+mkdir mysite
+cd mysite
+pip3 install virtualenv
+virtualenv myvenv
+source myvenv/bin/activate
+pip3 install django==2.1
+django-admin startproject temp .
+python manage.py migrate
+## settings.py에서 28번째 줄 -> ['*']
+python manage.py startapp main
+## settings.py에서 40번째 줄에 main 등록
+python manage.py runserver 0:80
+-> 서버 구동 확인
+-> Ctrl + C를 눌러서 서버 종료
+
+----
+
+urls -> views -> templates
+
+main > templates > main > index.html
+
+----
+
+ - 서버에 재 접속시 쳐야하는 명령어 - 
+cd mysite
+source myvenv/bin/activate
+
+----
+1. Static File 사용하기
+ -> 책 참고
+
+2. Template 상속
+2.1 상속하는 파일
+#four/mysite/one/templates/one/base.html
+<h1>menu!!</h1>
+
+{% block content %}
+{% endblock %}
+
+<h1>footer</h1>
+
+2.2 상속받는 파일
+{% extends "one/base.html" %}
+
+{% block content %}
+## 경로명 : one/templates/one/hello.html
+hello world
+{% endblock %}
+
+----
+
+python manage.py makemigrations
+python manage.py migrate
+
+----
+
+유튜브 영상
+https://youtu.be/ozSepodKOyg
+
+----
+크롤링
+from django.shortcuts import render
+import requests
+from bs4 import BeautifulSoup
+
+paullab_url = 'https://ridibooks.com/category/bestsellers/2200'
+response = requests.get(paullab_url)
+response.encoding = 'utf-8'
+html = response.text
+
+soup = BeautifulSoup(html, 'html.parser')
+
+bookservices = soup.select('.title_text')
+for no, book in enumerate(bookservices, 1):
+    print(no, book.text.strip())
+    
+def index(request):
+    return render(request, 'main/index.html', {'namelist':bookservices})
+
