@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +15,8 @@
   <meta property="og:url" content="http://paullab.co.kr">
   <!-- favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -166,8 +168,8 @@
         <!-- //hallabongTree -->
         <!-- supporters -->
         <div class="supporters">
-          <a href="supporters_page/home.html" target="_blank">
-            <img src="images/menu_supporters.png" alt="메뉴_서포터즈" />
+          <a href="https://ambassador.weniv.co.kr/" target="_blank">
+            <img src="images/menu_supporters.png" alt="메뉴_엠버서더" />
           </a>
         </div>
         <!-- //supporters -->
@@ -194,10 +196,12 @@
             </a>
           </div>
           <div class="naver">
-            <a href="https://blog.naver.com/paul-lab" target="_blank"><img src="images/sns_naverblog.png" alt="sns_네이버블로그" /></a>
+            <a href="https://blog.naver.com/paul-lab" target="_blank"><img src="images/sns_naverblog.png"
+                alt="sns_네이버블로그" /></a>
           </div>
           <div class="tistory">
-            <a href="https://paullab.tistory.com" target="_blank"><img src="images/sns_tistory.png" alt="sns_티스토리" /></a>
+            <a href="https://paullab.tistory.com" target="_blank"><img src="images/sns_tistory.png"
+                alt="sns_티스토리" /></a>
           </div>
         </div>
       </div>
@@ -272,7 +276,7 @@
       modal.classList.remove("on");
     }
     window.onclick = function (event) {
-      if(event.target == modal) {
+      if (event.target == modal) {
         modal.classList.remove("on");
       }
     };
@@ -282,20 +286,20 @@
     //음악 재생
     const bgm_button_play = document.querySelector('.bgm__button--play');
     const bgm_button_pause = document.querySelector('.bgm__button--pause');
-    const portraitMedia = window.matchMedia( 'only screen and (orientation: portrait)' );
+    const portraitMedia = window.matchMedia('only screen and (orientation: portrait)');
 
     const audio = new Audio();
     audio.src = "https://drive.google.com/uc?export=download&id=1xbevC0q-fNUDuoFCSLUdot0OIO81LgpE";
     audio.autoplay = true;
     audio.loop = true;
 
-    if(audio.paused) {
+    if (audio.paused) {
       bgm_button_play.classList.add('bgm__button--disactive');
       bgm_button_pause.classList.add('bgm__button--active');
     }
 
-    function musicPlay(){
-      if(audio.paused) {
+    function musicPlay() {
+      if (audio.paused) {
         audio.play();
         bgm_button_play.classList.add('bgm__button--disactive');
         bgm_button_pause.classList.add('bgm__button--active');
@@ -307,8 +311,8 @@
         bgm_button_pause.classList.remove('bgm__button--active');
       }
     }
-    window.onresize = function() {
-      if(portraitMedia.matches == true) {
+    window.onresize = function () {
+      if (portraitMedia.matches == true) {
         console.log('stop');
         musicStop();
       }
@@ -325,4 +329,5 @@
     // document.addEventListener('click', musicPlay);
   </script>
 </body>
+
 </html>
