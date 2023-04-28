@@ -237,12 +237,12 @@ hr {
   font-size: 25px;
   padding-bottom: 20px;
 }
-.about-paullab .intro_contents p {
+.about-paullab .intro_contents .contents {
   font-size: 17px;
   padding: 0 0 50px 35px;
   line-height: 1.5;
 }
-.about-paullab .intro_contents p:last-child {
+.about-paullab .intro_contents .contents:last-child {
   padding: 0 0 0 35px;
 }
 .about-paullab .intro_contents span {
@@ -251,6 +251,10 @@ hr {
 }
 .readmore-btn:hover {
   text-decoration: underline;
+}
+.about-paullab .link-list {
+  display: flex;
+  gap: 10px;
 }
 /* ceo */
 .about-ceo {
@@ -493,13 +497,151 @@ hr {
   padding-left: 3px;
 }
 
+@media all and (min-width: 640px) and (max-width: 1180px) {
+  #home .wrapper {
+    padding: 20px 25px;
+  }
+  #title .wrapper {
+    margin-left: 20px;
+  }
+  #title .title {
+    font-size: 60px;
+    margin: 0;
+    padding-bottom: 15px;
+  }
+  #title .title-img {
+    margin: 0;
+    padding: 0;
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  #main_contents .wrapper {
+    padding: 20px 10px;
+  }
+  /* about us */
+  .about-paullab .saying {
+    padding-bottom: 35px;
+  }
+  .about-paullab .intro {
+    padding-top: 40px;
+  }
+  .about-paullab .company .inner_1 {
+    width: 100px;
+    padding-right: 80px;
+  }
+  .about-paullab .company .inner_1 img {
+    padding-bottom: 26px;
+  }
+  .about-paullab .company .inner_2 {
+    width: 110px;
+    padding-right: 70px;
+  }
+  .about-paullab .company .inner_2 p {
+    font-size: 50px;
+    padding: 40px 0;
+  }
+  .about-paullab .company .inner_3 {
+    width: 150px;
+  }
+  .about-paullab .intro_contents h4 {
+    font-size: 20px;
+  }
+  .about-paullab .intro_contents .contents {
+    font-size: 15px;
+    padding: 0 0 40px 28px;
+  }
+  .about-paullab .intro_contents .contents:last-child {
+    padding: 0 0 0 28px;
+  }
+  .about-paullab .intro_contents span {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  /* ceo */
+  .about-ceo .intro {
+    padding: 20px 15px 0;
+  }
+  .about-ceo .intro .intro_img {
+    padding-right: 100px;
+  }
+  .about-ceo .intro .intro_img img {
+    width: 250px;
+  }
+  .about-ceo .intro .intro_saying {
+    font-size: 11px;
+  }
+  .about-ceo .intro .intro_contents {
+    padding: 20px 10px;
+  }
+  .about-ceo .intro .intro_contents .name h4 {
+    font-size: 25px;
+    padding-right: 20px;
+  }
+  .about-ceo .intro .intro_contents .name span {
+    font-size: 20px;
+  }
+  .about-ceo .intro .intro_contents .intro_text {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  .about-ceo .intro .intro_contents .intro_text span {
+    font-size: 9px;
+  }
+  /* us */
+  .us_imgs {
+    padding: 40px 15px 0;
+  }
+  .img_popup-wrap {
+    width: 600px;
+    height: 400px;
+  }
+  /* contact */
+  #contact .contact_items {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  #contact .contact_items .map iframe {
+    width: 600px;
+    height: 400px;
+  }
+  /* footer */
+  #footer .wrapper {
+    width: 640px;
+  }
+
+  #footer .footer_top {
+    font-size: 15px;
+  }
+
+  #footer .menu_item:first-child {
+    margin-right: 40px;
+  }
+
+  #footer .sns_list {
+    padding-top: 10px;
+  }
+
+  #footer .sns_list > a {
+    margin-left: 15px;
+  }
+
+  #footer .footer_bottom {
+    font-size: 13px;
+  }
+
+  #footer .footer_bottom .weniv_info {
+    max-width: 500px;
+  }
+}
+
 @media all and (max-width: 768px) {
   .us_imgs {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media all and (min-width: 320px) and (max-width: 639px) {
+@media all and (max-width: 639px) {
   #home .wrapper {
     padding: 15px 20px;
   }
@@ -584,15 +726,19 @@ hr {
     font-size: 15px;
     padding-bottom: 10px;
   }
-  .about-paullab .intro_contents p {
+  .about-paullab .intro_contents .contents {
     font-size: 10px;
     padding: 0 0 30px 20px;
   }
-  .about-paullab .intro_contents p:last-child {
+  .about-paullab .intro_contents .contents:last-child {
     padding: 0 0 0 20px;
   }
   .about-paullab .intro_contents span {
     font-size: 13px;
+  }
+  .about-paullab .link-list {
+    flex-direction: column;
+    gap: 5px;
   }
   .about-ceo {
     padding: 20px 0;
@@ -724,143 +870,5 @@ hr {
 
   #footer .footer_bottom .weniv_info {
     padding-bottom: 10px;
-  }
-}
-
-@media all and (min-width: 640px) and (max-width: 1180px) {
-  #home .wrapper {
-    padding: 20px 25px;
-  }
-  #title .wrapper {
-    margin-left: 20px;
-  }
-  #title .title {
-    font-size: 60px;
-    margin: 0;
-    padding-bottom: 15px;
-  }
-  #title .title-img {
-    margin: 0;
-    padding: 0;
-    -webkit-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    transform: scale(0.7);
-  }
-  #main_contents .wrapper {
-    padding: 20px 10px;
-  }
-  /* about us */
-  .about-paullab .saying {
-    padding-bottom: 35px;
-  }
-  .about-paullab .intro {
-    padding-top: 40px;
-  }
-  .about-paullab .company .inner_1 {
-    width: 100px;
-    padding-right: 80px;
-  }
-  .about-paullab .company .inner_1 img {
-    padding-bottom: 26px;
-  }
-  .about-paullab .company .inner_2 {
-    width: 110px;
-    padding-right: 70px;
-  }
-  .about-paullab .company .inner_2 p {
-    font-size: 50px;
-    padding: 40px 0;
-  }
-  .about-paullab .company .inner_3 {
-    width: 150px;
-  }
-  .about-paullab .intro_contents h4 {
-    font-size: 20px;
-  }
-  .about-paullab .intro_contents p {
-    font-size: 15px;
-    padding: 0 0 40px 28px;
-  }
-  .about-paullab .intro_contents p:last-child {
-    padding: 0 0 0 28px;
-  }
-  .about-paullab .intro_contents span {
-    font-size: 17px;
-    font-weight: bold;
-  }
-  /* ceo */
-  .about-ceo .intro {
-    padding: 20px 15px 0;
-  }
-  .about-ceo .intro .intro_img {
-    padding-right: 100px;
-  }
-  .about-ceo .intro .intro_img img {
-    width: 250px;
-  }
-  .about-ceo .intro .intro_saying {
-    font-size: 11px;
-  }
-  .about-ceo .intro .intro_contents {
-    padding: 20px 10px;
-  }
-  .about-ceo .intro .intro_contents .name h4 {
-    font-size: 25px;
-    padding-right: 20px;
-  }
-  .about-ceo .intro .intro_contents .name span {
-    font-size: 20px;
-  }
-  .about-ceo .intro .intro_contents .intro_text {
-    font-size: 15px;
-    line-height: 1.4;
-  }
-  .about-ceo .intro .intro_contents .intro_text span {
-    font-size: 9px;
-  }
-  /* us */
-  .us_imgs {
-    padding: 40px 15px 0;
-  }
-  .img_popup-wrap {
-    width: 600px;
-    height: 400px;
-  }
-  /* contact */
-  #contact .contact_items {
-    font-size: 15px;
-    line-height: 1.4;
-  }
-  #contact .contact_items .map iframe {
-    width: 600px;
-    height: 400px;
-  }
-  /* footer */
-  #footer .wrapper {
-    width: 640px;
-  }
-
-  #footer .footer_top {
-    font-size: 15px;
-  }
-
-  #footer .menu_item:first-child {
-    margin-right: 40px;
-  }
-
-  #footer .sns_list {
-    padding-top: 10px;
-  }
-
-  #footer .sns_list > a {
-    margin-left: 15px;
-  }
-
-  #footer .footer_bottom {
-    font-size: 13px;
-  }
-
-  #footer .footer_bottom .weniv_info {
-    max-width: 500px;
   }
 }
