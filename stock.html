@@ -5,18 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>크롤링 연습 페이지</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
   <style>
     h1{
       margin: 2rem;
     }
+
     h1>span{
       font-size: 1rem;
     }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      margin-top: 5rem;
+    }
+
+    .heading-top {
+      margin-top: 1rem;
+    }
+
     .main {
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
       text-align: center;
     }
@@ -26,7 +39,7 @@
     }
 
     a {
-      color: inherit;
+      /* color: inherit; */
       cursor: pointer;
       text-decoration: none;
     }
@@ -55,14 +68,8 @@
 
     }
 
-    #information .cat-img {
-      width: 70%;
-      padding-right: 100px;
-    }
-
     #information .cat-img img {
-      width: 100%;
-      height: auto;
+      width: 90%;
     }
 
     #information .tables {
@@ -72,7 +79,7 @@
 
     #information table {
       position: relative;
-      width: 300px;
+      width: 100%;
       padding: 10px;
       /* border-bottom: 1.5px dashed #dbdbdb; */
       align-items: center;
@@ -165,15 +172,28 @@
 </head>
 
 <body>
-  <h1>크롤링 연습용 페이지 <span id="update">update : 20.12.30 / 해외 크롤링이 Block되어 있으므로 크롤링이 안되시는 분은 이 URL(http://paullab.synology.me/stock.html)을 사용하세요.</span></h1>
-
-  <div id="information" class="main">
-    <h2>(주)캣네생선</h2>
-    <div class="wrap main">
-      <div class="cat-img">
-        <img src="cats_stock.png" alt="(주)캣네가게 주가">
+  <!-- 메뉴바, 로고 이미지는 logo-icon.png -->
+  <nav>
+    <div class="container-fluid">
+      <div class="row pt-3">
+        <div class="col-12">
+          <a href="https://www.paullab.co.kr">
+            <img src="images/logo-icon.png" alt="logo" width="50px">
+          </a>
+        </div>
       </div>
-      <div class="tables">
+    </div>
+  </nav>
+  <h1 class="sr-only">크롤링 연습용 페이지</h1>
+
+  <div id="information" class="main container">
+    <h2 class="heading-top">(주)캣네생선</h2>
+    <p>해당 페이지는 주식 크롤링 연습용 페이지입니다. 책 크롤링 연습을 하고 싶다면 <a href="https://paullab.co.kr/bookservice/">책 크롤링</a> 페이지로 이동하세요.</p>
+    <div class="wrap main row">
+      <div class="cat-img col-md-7">
+        <img src="images/cats_stock.png" alt="(주)캣네가게 주가" class="img-fluid">
+      </div>
+      <div class="tables col-md-5">
         <table summary="시가총액 정보" class="border-style">
           <tr>
               <th class="strong" scope="row">시가총액</th>
@@ -208,7 +228,7 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row">배당수익률 <span class="bar">l</span><span> 2019.12</span>
+                <th scope="row">배당수익률 <span class="bar">l</span><span> 2040.12</span>
                   <a class="help" href="#" alt="배당수익률 상세설명"><em>?</em></a>
                   <div class="lyr_section" style="display:none">
                     <div id="helpPannel5" class="tooltip_lyr dividend_layer">
@@ -247,9 +267,8 @@
 
   </div>
 
-  <div class="main">
+  <div class="main container">
     <h2 id="제주코딩베이스캠프연구원">제주코딩베이스캠프 연구원</h2>
-    <h3><span style="color: salmon">일별</span> 시세</h3>
     <table class="table table-hover">
       <tbody>
         <tr>
@@ -265,7 +284,7 @@
 
 
         <tr>
-          <td align="center "><span class="date ">2019.10.23</span></td>
+          <td align="center "><span class="date ">2040.10.23</span></td>
           <td class="num "><span>6,650</span></td>
           <td class="num ">
             <img src="ico_up.gif " width="7 " height="6 " style="margin-right:4px; " alt="상승 "><span>
@@ -281,7 +300,7 @@
 
 
         <tr>
-          <td align="center"><span class="date">2019.10.22</span></td>
+          <td align="center"><span class="date">2040.10.22</span></td>
           <td class="num"><span>6,630</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -294,7 +313,7 @@
           <td class="num"><span>919,571</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.21</span></td>
+          <td align="center"><span class="date">2040.10.21</span></td>
           <td class="num"><span>6,820</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -307,7 +326,7 @@
           <td class="num"><span>1,678,055</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.18</span></td>
+          <td align="center"><span class="date">2040.10.18</span></td>
           <td class="num"><span>6,430</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -320,7 +339,7 @@
           <td class="num"><span>2,168,857</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.17</span></td>
+          <td align="center"><span class="date">2040.10.17</span></td>
           <td class="num"><span>5,950</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -334,7 +353,7 @@
         </tr>
 
         <tr>
-          <td align="center"><span class="date">2019.10.16</span></td>
+          <td align="center"><span class="date">2040.10.16</span></td>
           <td class="num"><span>5,930</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -347,7 +366,7 @@
           <td class="num"><span>839,434</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.15</span></td>
+          <td align="center"><span class="date">2040.10.15</span></td>
           <td class="num"><span>5,640</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -360,7 +379,7 @@
           <td class="num"><span>702,104</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.14</span></td>
+          <td align="center"><span class="date">2040.10.14</span></td>
           <td class="num"><span>5,380</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -373,7 +392,7 @@
           <td class="num"><span>764,800</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.11</span></td>
+          <td align="center"><span class="date">2040.10.11</span></td>
           <td class="num"><span>5,040</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -386,7 +405,7 @@
           <td class="num"><span>134,558</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.10</span></td>
+          <td align="center"><span class="date">2040.10.10</span></td>
           <td class="num"><span>5,100</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -400,7 +419,7 @@
         </tr>
 
         <tr>
-          <td align="center"><span class="date">2019.10.08</span></td>
+          <td align="center"><span class="date">2040.10.08</span></td>
           <td class="num"><span>5,050</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -413,7 +432,7 @@
           <td class="num"><span>223,839</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.07</span></td>
+          <td align="center"><span class="date">2040.10.07</span></td>
           <td class="num"><span>4,940</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -426,7 +445,7 @@
           <td class="num"><span>199,580</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.04</span></td>
+          <td align="center"><span class="date">2040.10.04</span></td>
           <td class="num"><span>5,010</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -439,7 +458,7 @@
           <td class="num"><span>188,467</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.02</span></td>
+          <td align="center"><span class="date">2040.10.02</span></td>
           <td class="num"><span>4,920</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -452,7 +471,7 @@
           <td class="num"><span>160,510</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.01</span></td>
+          <td align="center"><span class="date">2040.10.01</span></td>
           <td class="num"><span>5,010</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -466,7 +485,7 @@
         </tr>
 
         <tr>
-          <td align="center"><span class="date">2019.09.30</span></td>
+          <td align="center"><span class="date">2040.09.30</span></td>
           <td class="num"><span>5,000</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -479,7 +498,7 @@
           <td class="num"><span>705,046</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.09.27</span></td>
+          <td align="center"><span class="date">2040.09.27</span></td>
           <td class="num"><span>5,010</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -492,7 +511,7 @@
           <td class="num"><span>408,859</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.09.26</span></td>
+          <td align="center"><span class="date">2040.09.26</span></td>
           <td class="num"><span>5,060</span></td>
           <td class="num">
             <span>0</span>
@@ -503,7 +522,7 @@
           <td class="num"><span>404,633</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.09.25</span></td>
+          <td align="center"><span class="date">2040.09.25</span></td>
           <td class="num"><span>5,060</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -516,7 +535,7 @@
           <td class="num"><span>441,923</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.09.24</span></td>
+          <td align="center"><span class="date">2040.09.24</span></td>
           <td class="num"><span>5,330</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -531,9 +550,8 @@
       </tbody>
     </table>
   </div>
-  <div class="main">
-    <h2 id="제주코딩베이스캠프공업">제주코딩베이스캠프 공업</h2>
-    <h3><span style="color: salmon">일별</span> 시세</h3>
+  <div class="main container">
+    <h2 id="제주코딩베이스캠프공업">제주코딩베이스캠프 미디어</h2>
     <table class="table table-hover">
       <tbody>
         <tr>
@@ -547,7 +565,7 @@
         </tr>
 
         <tr>
-          <td align="center"><span class="date">2019.10.23</span></td>
+          <td align="center"><span class="date">2040.10.23</span></td>
           <td class="num"><span>31,300</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -561,7 +579,7 @@
         </tr>
 
         <tr>
-          <td align="center"><span class="date">2019.10.22</span></td>
+          <td align="center"><span class="date">2040.10.22</span></td>
           <td class="num"><span>31,200</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -575,7 +593,7 @@
         </tr>
 
         <tr>
-          <td align="center"><span class="date">2019.10.21</span></td>
+          <td align="center"><span class="date">2040.10.21</span></td>
           <td class="num"><span>31,300</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -589,7 +607,7 @@
         </tr>
 
         <tr>
-          <td align="center"><span class="date">2019.10.18</span></td>
+          <td align="center"><span class="date">2040.10.18</span></td>
           <td class="num"><span>30,800</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -602,7 +620,7 @@
           <td class="num"><span>1,731,279</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.17</span></td>
+          <td align="center"><span class="date">2040.10.17</span></td>
           <td class="num"><span>28,400</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -616,7 +634,7 @@
         </tr>
 
         <tr>
-          <td align="center"><span class="date">2019.10.16</span></td>
+          <td align="center"><span class="date">2040.10.16</span></td>
           <td class="num"><span>27,700</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -629,7 +647,7 @@
           <td class="num"><span>1,003,434</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.15</span></td>
+          <td align="center"><span class="date">2040.10.15</span></td>
           <td class="num"><span>26,800</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -642,7 +660,7 @@
           <td class="num"><span>589,982</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.14</span></td>
+          <td align="center"><span class="date">2040.10.14</span></td>
           <td class="num"><span>26,100</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -655,7 +673,7 @@
           <td class="num"><span>335,940</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.11</span></td>
+          <td align="center"><span class="date">2040.10.11</span></td>
           <td class="num"><span>26,200</span></td>
           <td class="num">
             <span>0</span>
@@ -666,7 +684,7 @@
           <td class="num"><span>531,894</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.10</span></td>
+          <td align="center"><span class="date">2040.10.10</span></td>
           <td class="num"><span>26,200</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -680,7 +698,7 @@
         </tr>
 
         <tr>
-          <td align="center"><span class="date">2019.10.08</span></td>
+          <td align="center"><span class="date">2040.10.08</span></td>
           <td class="num"><span>24,500</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -693,7 +711,7 @@
           <td class="num"><span>336,803</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.07</span></td>
+          <td align="center"><span class="date">2040.10.07</span></td>
           <td class="num"><span>23,650</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -706,7 +724,7 @@
           <td class="num"><span>285,608</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.04</span></td>
+          <td align="center"><span class="date">2040.10.04</span></td>
           <td class="num"><span>24,100</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -719,7 +737,7 @@
           <td class="num"><span>236,640</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.02</span></td>
+          <td align="center"><span class="date">2040.10.02</span></td>
           <td class="num"><span>24,500</span></td>
           <td class="num">
             <span>0</span>
@@ -730,7 +748,7 @@
           <td class="num"><span>258,642</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.01</span></td>
+          <td align="center"><span class="date">2040.10.01</span></td>
           <td class="num"><span>24,500</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -744,7 +762,7 @@
         </tr>
 
         <tr>
-          <td align="center"><span class="date">2019.09.30</span></td>
+          <td align="center"><span class="date">2040.09.30</span></td>
           <td class="num"><span>24,100</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -757,7 +775,7 @@
           <td class="num"><span>369,465</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.09.27</span></td>
+          <td align="center"><span class="date">2040.09.27</span></td>
           <td class="num"><span>23,800</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -770,7 +788,7 @@
           <td class="num"><span>300,900</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.09.26</span></td>
+          <td align="center"><span class="date">2040.09.26</span></td>
           <td class="num"><span>24,100</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -783,7 +801,7 @@
           <td class="num"><span>227,601</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.09.25</span></td>
+          <td align="center"><span class="date">2040.09.25</span></td>
           <td class="num"><span>24,300</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -796,7 +814,7 @@
           <td class="num"><span>367,106</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.09.24</span></td>
+          <td align="center"><span class="date">2040.09.24</span></td>
           <td class="num"><span>25,500</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -811,9 +829,8 @@
       </tbody>
     </table>
   </div>
-  <div class="main">
+  <div class="main container">
     <h2 id="제주코딩베이스캠프출판사">제주코딩베이스캠프 출판사</h2>
-    <h3><span style="color: salmon">일별</span> 시세</h3>
     <table class="table table-hover">
       <tbody>
         <tr>
@@ -827,7 +844,7 @@
         </tr>
 
         <tr>
-          <td align="center "><span class="date ">2019.10.23</span></td>
+          <td align="center "><span class="date ">2040.10.23</span></td>
           <td class="num "><span>13,250</span></td>
           <td class="num ">
             <img src="ico_down.gif " width="7 " height="6 " style="margin-right:4px; " alt="하락 "><span class="tah p11 nv01 ">
@@ -843,7 +860,7 @@
 
 
         <tr>
-          <td align="center"><span class="date">2019.10.22</span></td>
+          <td align="center"><span class="date">2040.10.22</span></td>
           <td class="num"><span>13,350</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -856,7 +873,7 @@
           <td class="num"><span>160,439</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.21</span></td>
+          <td align="center"><span class="date">2040.10.21</span></td>
           <td class="num"><span>13,500</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -869,7 +886,7 @@
           <td class="num"><span>237,001</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.18</span></td>
+          <td align="center"><span class="date">2040.10.18</span></td>
           <td class="num"><span>13,050</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -882,7 +899,7 @@
           <td class="num"><span>278,034</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.17</span></td>
+          <td align="center"><span class="date">2040.10.17</span></td>
           <td class="num"><span>12,700</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -896,7 +913,7 @@
         </tr>
 
         <tr>
-          <td align="center"><span class="date">2019.10.16</span></td>
+          <td align="center"><span class="date">2040.10.16</span></td>
           <td class="num"><span>13,150</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -909,7 +926,7 @@
           <td class="num"><span>615,073</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.15</span></td>
+          <td align="center"><span class="date">2040.10.15</span></td>
           <td class="num"><span>12,550</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -922,7 +939,7 @@
           <td class="num"><span>128,599</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.14</span></td>
+          <td align="center"><span class="date">2040.10.14</span></td>
           <td class="num"><span>12,700</span></td>
           <td class="num">
             <span>0</span>
@@ -933,7 +950,7 @@
           <td class="num"><span>47,049</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.11</span></td>
+          <td align="center"><span class="date">2040.10.11</span></td>
           <td class="num"><span>12,700</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -946,7 +963,7 @@
           <td class="num"><span>60,017</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.10</span></td>
+          <td align="center"><span class="date">2040.10.10</span></td>
           <td class="num"><span>12,550</span></td>
           <td class="num">
             <span>0</span>
@@ -958,7 +975,7 @@
         </tr>
 
         <tr>
-          <td align="center"><span class="date">2019.10.08</span></td>
+          <td align="center"><span class="date">2040.10.08</span></td>
           <td class="num"><span>12,550</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -971,7 +988,7 @@
           <td class="num"><span>75,452</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.07</span></td>
+          <td align="center"><span class="date">2040.10.07</span></td>
           <td class="num"><span>12,700</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -984,7 +1001,7 @@
           <td class="num"><span>98,403</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.04</span></td>
+          <td align="center"><span class="date">2040.10.04</span></td>
           <td class="num"><span>12,750</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -997,7 +1014,7 @@
           <td class="num"><span>89,815</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.02</span></td>
+          <td align="center"><span class="date">2040.10.02</span></td>
           <td class="num"><span>12,900</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -1010,7 +1027,7 @@
           <td class="num"><span>157,254</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.01</span></td>
+          <td align="center"><span class="date">2040.10.01</span></td>
           <td class="num"><span>13,350</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -1024,7 +1041,7 @@
         </tr>
 
         <tr>
-          <td align="center"><span class="date">2019.09.30</span></td>
+          <td align="center"><span class="date">2040.09.30</span></td>
           <td class="num"><span>13,300</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -1037,7 +1054,7 @@
           <td class="num"><span>131,064</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.09.27</span></td>
+          <td align="center"><span class="date">2040.09.27</span></td>
           <td class="num"><span>13,150</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -1050,7 +1067,7 @@
           <td class="num"><span>52,919</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.09.26</span></td>
+          <td align="center"><span class="date">2040.09.26</span></td>
           <td class="num"><span>13,050</span></td>
           <td class="num">
             <span>0</span>
@@ -1061,7 +1078,7 @@
           <td class="num"><span>153,270</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.09.25</span></td>
+          <td align="center"><span class="date">2040.09.25</span></td>
           <td class="num"><span>13,050</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -1074,7 +1091,7 @@
           <td class="num"><span>227,991</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.09.24</span></td>
+          <td align="center"><span class="date">2040.09.24</span></td>
           <td class="num"><span>13,350</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -1089,9 +1106,8 @@
       </tbody>
     </table>
   </div>
-  <div class="main">
-    <h2 id="제주코딩베이스캠프학원">제주코딩베이스캠프 학원</h2>
-    <h3><span style="color: salmon">일별</span> 시세</h3>
+  <div class="main container">
+    <h2 id="주식회사위니브">주식회사 위니브</h2>
     <table class="table table-hover">
       <tbody>
         <tr>
@@ -1106,7 +1122,7 @@
 
 
         <tr>
-          <td align="center "><span class="date ">2019.10.23</span></td>
+          <td align="center "><span class="date ">2040.10.23</span></td>
           <td class="num "><span>2,600</span></td>
           <td class="num ">
             <img src="ico_up.gif " width="7 " height="6 " style="margin-right:4px; "><span>
@@ -1122,7 +1138,7 @@
 
 
         <tr>
-          <td align="center"><span class="date">2019.10.22</span></td>
+          <td align="center"><span class="date">2040.10.22</span></td>
           <td class="num"><span>2,000</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -1135,7 +1151,7 @@
           <td class="num"><span>32,212</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.21</span></td>
+          <td align="center"><span class="date">2040.10.21</span></td>
           <td class="num"><span>1,995</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -1148,7 +1164,7 @@
           <td class="num"><span>35,186</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.18</span></td>
+          <td align="center"><span class="date">2040.10.18</span></td>
           <td class="num"><span>2,025</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -1161,7 +1177,7 @@
           <td class="num"><span>108,481</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.17</span></td>
+          <td align="center"><span class="date">2040.10.17</span></td>
           <td class="num"><span>1,985</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -1175,7 +1191,7 @@
         </tr>
 
         <tr>
-          <td align="center"><span class="date">2019.10.16</span></td>
+          <td align="center"><span class="date">2040.10.16</span></td>
           <td class="num"><span>1,975</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -1188,7 +1204,7 @@
           <td class="num"><span>19,243</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.15</span></td>
+          <td align="center"><span class="date">2040.10.15</span></td>
           <td class="num"><span>1,980</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -1201,7 +1217,7 @@
           <td class="num"><span>35,658</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.14</span></td>
+          <td align="center"><span class="date">2040.10.14</span></td>
           <td class="num"><span>1,960</span></td>
           <td class="num">
             <span>0</span>
@@ -1212,7 +1228,7 @@
           <td class="num"><span>26,698</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.11</span></td>
+          <td align="center"><span class="date">2040.10.11</span></td>
           <td class="num"><span>1,960</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -1225,7 +1241,7 @@
           <td class="num"><span>45,469</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.10</span></td>
+          <td align="center"><span class="date">2040.10.10</span></td>
           <td class="num"><span>1,915</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -1239,7 +1255,7 @@
         </tr>
 
         <tr>
-          <td align="center"><span class="date">2019.10.08</span></td>
+          <td align="center"><span class="date">2040.10.08</span></td>
           <td class="num"><span>1,900</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -1252,7 +1268,7 @@
           <td class="num"><span>62,433</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.07</span></td>
+          <td align="center"><span class="date">2040.10.07</span></td>
           <td class="num"><span>1,920</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -1265,7 +1281,7 @@
           <td class="num"><span>89,504</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.04</span></td>
+          <td align="center"><span class="date">2040.10.04</span></td>
           <td class="num"><span>1,970</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -1278,7 +1294,7 @@
           <td class="num"><span>47,894</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.02</span></td>
+          <td align="center"><span class="date">2040.10.02</span></td>
           <td class="num"><span>1,990</span></td>
           <td class="num">
             <span>0</span>
@@ -1289,7 +1305,7 @@
           <td class="num"><span>74,176</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.10.01</span></td>
+          <td align="center"><span class="date">2040.10.01</span></td>
           <td class="num"><span>1,990</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -1303,7 +1319,7 @@
         </tr>
 
         <tr>
-          <td align="center"><span class="date">2019.09.30</span></td>
+          <td align="center"><span class="date">2040.09.30</span></td>
           <td class="num"><span>1,970</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -1316,7 +1332,7 @@
           <td class="num"><span>34,087</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.09.27</span></td>
+          <td align="center"><span class="date">2040.09.27</span></td>
           <td class="num"><span>1,975</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
@@ -1329,7 +1345,7 @@
           <td class="num"><span>109,372</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.09.26</span></td>
+          <td align="center"><span class="date">2040.09.26</span></td>
           <td class="num"><span>1,970</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -1342,7 +1358,7 @@
           <td class="num"><span>83,120</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.09.25</span></td>
+          <td align="center"><span class="date">2040.09.25</span></td>
           <td class="num"><span>2,000</span></td>
           <td class="num">
             <img src="ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
@@ -1355,7 +1371,7 @@
           <td class="num"><span>78,144</span></td>
         </tr>
         <tr>
-          <td align="center"><span class="date">2019.09.24</span></td>
+          <td align="center"><span class="date">2040.09.24</span></td>
           <td class="num"><span>2,065</span></td>
           <td class="num">
             <img src="ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span>
