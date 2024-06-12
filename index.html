@@ -1,333 +1,389 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- 네이버 추적코드 삽입 -->
-  <meta name="naver-site-verification" content="f6051afcd291f3ccef7b8f01128dfc92d14563a4">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="바울랩, 위니브">
-  <meta name="description" content="제주 ICT 코딩 컴퓨터학원, 연구원, 출판사">
-  <meta property="og:description" content="제주 ICT 코딩 컴퓨터학원, 연구원, 출판사">
-  <meta property="og:image" content="http://paullab.co.kr/images/jejucoding.png">
-  <meta property="og:url" content="http://paullab.co.kr">
-  <!-- favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap">
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Jeju Coding BaseCamp</title>
-  <!--
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- 네이버 추적코드 삽입 -->
+    <meta
+      name="naver-site-verification"
+      content="f6051afcd291f3ccef7b8f01128dfc92d14563a4"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="바울랩, 위니브" />
+    <meta
+      name="description"
+      content="제주 ICT 코딩 컴퓨터학원, 연구원, 출판사"
+    />
+    <meta
+      property="og:description"
+      content="제주 ICT 코딩 컴퓨터학원, 연구원, 출판사"
+    />
+    <meta
+      property="og:image"
+      content="http://paullab.co.kr/images/jejucoding.png"
+    />
+    <meta property="og:url" content="http://paullab.co.kr" />
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+    />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Jeju Coding BaseCamp</title>
+    <!--
   구글 Analytics 스크립트 삽입
   Global site tag (gtag.js) - Google Analytics
   -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72047520-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "UA-72047520-1");
-  </script>
-  <!-- //구글 Analytics 스크립트 삽입 -->
-</head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-72047520-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-72047520-1");
+    </script>
+    <!-- //구글 Analytics 스크립트 삽입 -->
+  </head>
 
-<body>
-  <!-- 모바일 세로모드 적용 -->
-  <div id="message">
-    <div class="message__img">
-      <img src="images/message_licat.png" alt="메세지_라이캣" />
+  <body>
+    <!-- 모바일 세로모드 적용 -->
+    <div id="message">
+      <div class="message__img">
+        <img src="images/message_licat.png" alt="메세지_라이캣" />
+      </div>
+      <p>해당 웹 페이지는 가로모드만 지원합니다.</p>
     </div>
-    <p>해당 웹 페이지는 가로모드만 지원합니다.</p>
-  </div>
-  <!-- //모바일 세로모드 적용 -->
-  <section id="header">
-    <div class="home">
-      <a href="index.html" class="home__btn">
-        <p>JEJU CODING BASECAMP</p>
-      </a>
-    </div>
-    <!-- 음악 삽입 -->
-    <!-- 1번_childrens-game by ziv-moran Artlist-->
-    <div class="bgm__button--play"></div>
-    <div class="bgm__button--pause"></div>
-    <!-- <audio loop class="bgm">
+    <!-- //모바일 세로모드 적용 -->
+    <section id="header">
+      <div class="home">
+        <a href="index.html" class="home__btn">
+          <p>JEJU CODING BASECAMP</p>
+        </a>
+      </div>
+      <!-- 음악 삽입 -->
+      <!-- 1번_childrens-game by ziv-moran Artlist-->
+      <div class="bgm__button--play"></div>
+      <div class="bgm__button--pause"></div>
+      <!-- <audio loop class="bgm">
       <source src="https://drive.google.com/uc?export=download&id=1xbevC0q-fNUDuoFCSLUdot0OIO81LgpE" type="audio/mp3" >
     </audio> -->
-    <!-- //음악삽입 -->
-    <!-- 새소식 -->
-    <div class="news" onclick="openModal()">
-      <div class="news__bird"></div>
-    </div>
-    <!-- //새소식 -->
-  </section>
-  <!-- main section -->
-  <section id="main-container">
-    <h2>메인 컨텐츠</h2>
-    <div id="background-img"></div>
-    <div class="main__wrapper">
-      <!-- jeju-img -->
-      <div id="jeju-img">
-        <!-- menu -->
-        <div class="menu__hallasan">
-          <a href="http://www.jejucodingcamp.com/" target="_blank">
-            <img src="images/menu_hallasan.png" class="menu__hallasan__img" alt="메뉴_한라산" />
-          </a>
-        </div>
-        <div class="menu menu__paullab">
-          <a href="about.html">
-            <div class="menu__paullab--frame"></div>
-          </a>
-          <h4>About</h4>
-        </div>
-        <div class="menu menu__youtube">
-          <a href="https://www.youtube.com/channel/UC4GnvNKtuJ4cqWsYjxNxAEQ" target="_blank">
-            <div class="menu__youtube--python"></div>
-            <h4>유튜브</h4>
-          </a>
-        </div>
-        <div class="menu menu__store">
-          <a href=" http://smartstore.naver.com/weniv_store" target="_blank">
-            <div class="menu__store--mura"></div>
-          </a>
-          <h4>Store</h4>
-        </div>
-        <div class="menu menu__recruitment">
-          <a href="https://www.notion.so/paullabworkspace/Team-recruitment-c3d8061a76ad40b8a73f4493cf92a263">
-            <div class="menu__recruitment--gary"></div>
-          </a>
-          <h4>채용 정보</h4>
-        </div>
-        <div class="menu menu__online_lec">
-          <a href="https://www.inflearn.com/instructors/170213/courses" target="_blank">
-            <div class="menu__online_lec--soulgom"></div>
-          </a>
-          <h4>온라인 강의</h4>
-        </div>
-        <div class="menu menu__intro">
-          <a href="weniv.html">
-            <div class="menu__intro--licat">
-              <img src="images/animation_licat_no_hand.png" alt="animation_licat_no_hand" />
-              <img src="images/animation_licat_hand.png" class="hand" alt="animation_licat_hand" />
-            </div>
-          </a>
-          <h4>캐릭터 소개</h4>
-        </div>
-        <div class="menu menu__referenceroom">
-          <a href="referenceroom.html">
-            <div class="menu__referenceroom--javadog"></div>
-          </a>
-          <h4>자료실</h4>
-        </div>
-        <div class="menu menu__curriculum">
-          <a href="curriculum.html">
-            <div class="menu__curriculum--binky"></div>
-          </a>
-          <h4>커리큘럼</h4>
-        </div>
-        <!-- //menu -->
-        <!-- etc -->
-        <div class="windmill scale">
-          <div class="windmill_base">
-            <img src="images/windmill_base.png" alt="windmill_base" />
-          </div>
-          <div class="windmill--wind">
-            <img src="images/windmill_wind1.png" alt="wind1" class="wind1" />
-            <img src="images/windmill_wind1.png" alt="wind2" class="wind2" />
-          </div>
-        </div>
-        <div class="parasol etc">
-          <a href="http://paullab.co.kr/codefestival.html">
-            <img src="images/menu_parasol.png" alt="메뉴_파라솔" />
-          </a>
-        </div>
-        <div class="hallabong etc">
-          <a href="http://paullab.co.kr/stock.html">
-            <img src="images/menu_hallabong.png" alt="메뉴_한라봉" />
-          </a>
-        </div>
-        <!-- // etc -->
-        <!-- dolharbang -->
-        <div class="dolharbang">
-          <a href="halloffame.html">
-            <img src="images/menu_dolharbang.png" alt="메뉴_돌하르방" />
-          </a>
-        </div>
-        <!-- //dolharbang -->
-        <!-- hallabongTree -->
-        <div class="hallabongTree">
-          <a href="10000hours.html">
-            <img src="images/menu_hallabong_tree.png" alt="메뉴_1만시간의법칙" />
-          </a>
-        </div>
-        <!-- //hallabongTree -->
-        <!-- supporters -->
-        <div class="supporters">
-          <a href="https://ambassador.weniv.co.kr/" target="_blank">
-            <img src="images/menu_supporters.png" alt="메뉴_엠버서더" />
-          </a>
-        </div>
-        <!-- //supporters -->
-        <!-- mbit_test -->
-        <div class="mbit_test">
-          <a href="https://mbit.weniv.co.kr/" target="_blank">
-            <img src="images/menu_mbit.png" alt="메뉴_mbit테스트" />
-          </a>
-        </div>
-        <!-- //mbit_test -->
+      <!-- //음악삽입 -->
+      <!-- 새소식 -->
+      <div class="news" onclick="openModal()">
+        <div class="news__bird"></div>
       </div>
-      <!-- //jeju-img -->
-      <!-- sns -->
-      <div class="sns">
-        <div class="sns__wrap">
-          <div class="instagram">
-            <a href="https://www.instagram.com/weniv_official/" target="_blank">
-              <img src="images/sns_instagram.png" alt="sns_인스타그램" />
+      <!-- //새소식 -->
+    </section>
+    <!-- main section -->
+    <section id="main-container">
+      <h2>메인 컨텐츠</h2>
+      <div id="background-img"></div>
+      <div class="main__wrapper">
+        <!-- jeju-img -->
+        <div id="jeju-img">
+          <!-- menu -->
+          <div class="menu__hallasan">
+            <a href="http://www.jejucodingcamp.com/" target="_blank">
+              <img
+                src="images/menu_hallasan.png"
+                class="menu__hallasan__img"
+                alt="메뉴_한라산"
+              />
             </a>
           </div>
-          <div class="facebook">
-            <a href="https://www.facebook.com/제주-코딩-베이스캠프-1512494142177634/" target="_blank">
-              <img src="images/sns_facebook.png" alt="sns_페이스북" />
+          <div class="menu menu__paullab">
+            <a href="about.html">
+              <div class="menu__paullab--frame"></div>
+            </a>
+            <h4>About</h4>
+          </div>
+          <div class="menu menu__youtube">
+            <a
+              href="https://www.youtube.com/channel/UC4GnvNKtuJ4cqWsYjxNxAEQ"
+              target="_blank"
+            >
+              <div class="menu__youtube--python"></div>
+              <h4>유튜브</h4>
             </a>
           </div>
-          <div class="naver">
-            <a href="https://blog.naver.com/paul-lab" target="_blank"><img src="images/sns_naverblog.png"
-                alt="sns_네이버블로그" /></a>
+          <div class="menu menu__store">
+            <a href=" http://smartstore.naver.com/weniv_store" target="_blank">
+              <div class="menu__store--mura"></div>
+            </a>
+            <h4>Store</h4>
           </div>
-          <div class="tistory">
-            <a href="https://paullab.tistory.com" target="_blank"><img src="images/sns_tistory.png"
-                alt="sns_티스토리" /></a>
+          <div class="menu menu__recruitment">
+            <a
+              href="https://www.notion.so/paullabworkspace/Team-recruitment-c3d8061a76ad40b8a73f4493cf92a263"
+            >
+              <div class="menu__recruitment--gary"></div>
+            </a>
+            <h4>채용 정보</h4>
           </div>
-        </div>
-      </div>
-      <!-- //sns -->
-    </div>
-    <!-- //main__wrapper -->
-  </section>
-  <!-- //main section -->
-
-  <!-- 모달 -->
-  <div id="modal">
-    <div class="modal__wrap">
-      <div class="modal__window">
-        <div class="modal__header">
-          <div class="modal__title">
-            <p>
-              새 소 식
-            </p>
+          <div class="menu menu__online_lec">
+            <a
+              href="https://www.inflearn.com/users/170213/@jejucoding"
+              target="_blank"
+            >
+              <div class="menu__online_lec--soulgom"></div>
+            </a>
+            <h4>온라인 강의</h4>
           </div>
-          <div class="close__btn" onclick="closeModal()">
-            <i class="fas fa-times"></i>
+          <div class="menu menu__intro">
+            <a href="weniv.html">
+              <div class="menu__intro--licat">
+                <img
+                  src="images/animation_licat_no_hand.png"
+                  alt="animation_licat_no_hand"
+                />
+                <img
+                  src="images/animation_licat_hand.png"
+                  class="hand"
+                  alt="animation_licat_hand"
+                />
+              </div>
+            </a>
+            <h4>캐릭터 소개</h4>
           </div>
-        </div>
-        <div class="modal__content">
-          <!-- 새로운 공지는 post 클래스 복사 -->
-          <!-- post 1 -->
-          <div class="post">
-            <div class="post__img">
+          <div class="menu menu__referenceroom">
+            <a href="referenceroom.html">
+              <div class="menu__referenceroom--javadog"></div>
+            </a>
+            <h4>자료실</h4>
+          </div>
+          <div class="menu menu__curriculum">
+            <a href="curriculum.html">
+              <div class="menu__curriculum--binky"></div>
+            </a>
+            <h4>커리큘럼</h4>
+          </div>
+          <!-- //menu -->
+          <!-- etc -->
+          <div class="windmill scale">
+            <div class="windmill_base">
+              <img src="images/windmill_base.png" alt="windmill_base" />
             </div>
-            <div class="post__item">
-              <h4 class="post__title">
-                바울랩 오프라인 강좌 공지!
-              </h4>
-              <p class="post__explanation">
-                현재 접수 중인 오프라인 강좌가 없습니다. 아래 링크를 통해 온라인 강좌를 확인해 주세요.
-              </p>
-              <a href="https://www.inflearn.com/instructors/170213/courses" target="_blank" class="readmore__btn">
-                <i class="fa fa-arrow-circle-right"></i> 제코베 온라인 강좌 알아보기🏃‍♂️
+            <div class="windmill--wind">
+              <img src="images/windmill_wind1.png" alt="wind1" class="wind1" />
+              <img src="images/windmill_wind1.png" alt="wind2" class="wind2" />
+            </div>
+          </div>
+          <div class="parasol etc">
+            <a href="http://paullab.co.kr/codefestival.html">
+              <img src="images/menu_parasol.png" alt="메뉴_파라솔" />
+            </a>
+          </div>
+          <div class="hallabong etc">
+            <a href="http://paullab.co.kr/stock.html">
+              <img src="images/menu_hallabong.png" alt="메뉴_한라봉" />
+            </a>
+          </div>
+          <!-- // etc -->
+          <!-- dolharbang -->
+          <div class="dolharbang">
+            <a href="halloffame.html">
+              <img src="images/menu_dolharbang.png" alt="메뉴_돌하르방" />
+            </a>
+          </div>
+          <!-- //dolharbang -->
+          <!-- hallabongTree -->
+          <div class="hallabongTree">
+            <a href="10000hours.html">
+              <img
+                src="images/menu_hallabong_tree.png"
+                alt="메뉴_1만시간의법칙"
+              />
+            </a>
+          </div>
+          <!-- //hallabongTree -->
+          <!-- supporters -->
+          <div class="supporters">
+            <a href="https://ambassador.weniv.co.kr/" target="_blank">
+              <img src="images/menu_supporters.png" alt="메뉴_엠버서더" />
+            </a>
+          </div>
+          <!-- //supporters -->
+          <!-- mbit_test -->
+          <div class="mbit_test">
+            <a href="https://mbit.weniv.co.kr/" target="_blank">
+              <img src="images/menu_mbit.png" alt="메뉴_mbit테스트" />
+            </a>
+          </div>
+          <!-- //mbit_test -->
+        </div>
+        <!-- //jeju-img -->
+        <!-- sns -->
+        <div class="sns">
+          <div class="sns__wrap">
+            <div class="instagram">
+              <a
+                href="https://www.instagram.com/weniv_official/"
+                target="_blank"
+              >
+                <img src="images/sns_instagram.png" alt="sns_인스타그램" />
               </a>
             </div>
-          </div>
-          <!-- post1 -->
-
-          <!-- post2 -->
-          <div class="post">
-            <div class="post__item">
-              <h4 class="post__title">
-                단체 카톡방 공지!🧚‍♀️
-              </h4>
-              <p class="post__explanation">
-                제주 ICT관련 정보, 행사 정보, 전국 ICT 정보, 행사 정보, 채용정보, 개강정보 등을 단톡방을 통해 드리고 있습니다.<br>
-                대화는 하지 않는 단톡방이며, 혹시 단톡방 정보를 받지 못하신
-                분은 <strong>대표 번호(010-5044-2903)</strong>로 연락주시고, 초대링크를 받아주세요.<br>감사합니다.
-              </p>
+            <div class="facebook">
+              <a
+                href="https://www.facebook.com/제주-코딩-베이스캠프-1512494142177634/"
+                target="_blank"
+              >
+                <img src="images/sns_facebook.png" alt="sns_페이스북" />
+              </a>
+            </div>
+            <div class="naver">
+              <a href="https://blog.naver.com/paul-lab" target="_blank"
+                ><img src="images/sns_naverblog.png" alt="sns_네이버블로그"
+              /></a>
+            </div>
+            <div class="tistory">
+              <a href="https://paullab.tistory.com" target="_blank"
+                ><img src="images/sns_tistory.png" alt="sns_티스토리"
+              /></a>
             </div>
           </div>
-          <!-- //post 2 -->
         </div>
-        <div class="modal__footer"></div>
+        <!-- //sns -->
+      </div>
+      <!-- //main__wrapper -->
+    </section>
+    <!-- //main section -->
+
+    <!-- 모달 -->
+    <div id="modal">
+      <div class="modal__wrap">
+        <div class="modal__window">
+          <div class="modal__header">
+            <div class="modal__title">
+              <p>새 소 식</p>
+            </div>
+            <div class="close__btn" onclick="closeModal()">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="modal__content">
+            <!-- 새로운 공지는 post 클래스 복사 -->
+            <!-- post 1 -->
+            <div class="post">
+              <div class="post__img"></div>
+              <div class="post__item">
+                <h4 class="post__title">바울랩 오프라인 강좌 공지!</h4>
+                <p class="post__explanation">
+                  현재 접수 중인 오프라인 강좌가 없습니다. 아래 링크를 통해
+                  온라인 강좌를 확인해 주세요.
+                </p>
+                <a
+                  href="https://www.inflearn.com/instructors/170213/courses"
+                  target="_blank"
+                  class="readmore__btn"
+                >
+                  <i class="fa fa-arrow-circle-right"></i> 제코베 온라인 강좌
+                  알아보기🏃‍♂️
+                </a>
+              </div>
+            </div>
+            <!-- post1 -->
+
+            <!-- post2 -->
+            <div class="post">
+              <div class="post__item">
+                <h4 class="post__title">단체 카톡방 공지!🧚‍♀️</h4>
+                <p class="post__explanation">
+                  제주 ICT관련 정보, 행사 정보, 전국 ICT 정보, 행사 정보,
+                  채용정보, 개강정보 등을 단톡방을 통해 드리고 있습니다.<br />
+                  대화는 하지 않는 단톡방이며, 혹시 단톡방 정보를 받지 못하신
+                  분은 <strong>대표 번호(010-5044-2903)</strong>로 연락주시고,
+                  초대링크를 받아주세요.<br />감사합니다.
+                </p>
+              </div>
+            </div>
+            <!-- //post 2 -->
+          </div>
+          <div class="modal__footer"></div>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- //모달 -->
+    <!-- //모달 -->
 
-  <script type="text/javascript">
-    const bird = document.querySelector(".bird");
-    const modal = document.querySelector("#modal");
-    function openModal() {
-      modal.classList.add("on");
-    }
-    function closeModal() {
-      modal.classList.remove("on");
-    }
-    window.onclick = function (event) {
-      if (event.target == modal) {
+    <script type="text/javascript">
+      const bird = document.querySelector(".bird");
+      const modal = document.querySelector("#modal");
+      function openModal() {
+        modal.classList.add("on");
+      }
+      function closeModal() {
         modal.classList.remove("on");
       }
-    };
-    window.addEventListener("onclick", openModal);
-    window.addEventListener("onclick", closeModal);
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.classList.remove("on");
+        }
+      };
+      window.addEventListener("onclick", openModal);
+      window.addEventListener("onclick", closeModal);
 
-    //음악 재생
-    const bgm_button_play = document.querySelector('.bgm__button--play');
-    const bgm_button_pause = document.querySelector('.bgm__button--pause');
-    const portraitMedia = window.matchMedia('only screen and (orientation: portrait)');
+      //음악 재생
+      const bgm_button_play = document.querySelector(".bgm__button--play");
+      const bgm_button_pause = document.querySelector(".bgm__button--pause");
+      const portraitMedia = window.matchMedia(
+        "only screen and (orientation: portrait)"
+      );
 
-    const audio = new Audio();
-    audio.src = "https://drive.google.com/uc?export=download&id=1xbevC0q-fNUDuoFCSLUdot0OIO81LgpE";
-    audio.autoplay = true;
-    audio.loop = true;
+      const audio = new Audio();
+      audio.src =
+        "https://drive.google.com/uc?export=download&id=1xbevC0q-fNUDuoFCSLUdot0OIO81LgpE";
+      audio.autoplay = true;
+      audio.loop = true;
 
-    if (audio.paused) {
-      bgm_button_play.classList.add('bgm__button--disactive');
-      bgm_button_pause.classList.add('bgm__button--active');
-    }
-
-    function musicPlay() {
       if (audio.paused) {
-        audio.play();
-        bgm_button_play.classList.add('bgm__button--disactive');
-        bgm_button_pause.classList.add('bgm__button--active');
-        document.removeEventListener('click', musicPlay);
-      } else {
-        audio.pause();
-        audio.currentTime = 0;
-        bgm_button_play.classList.remove('bgm__button--disactive');
-        bgm_button_pause.classList.remove('bgm__button--active');
+        bgm_button_play.classList.add("bgm__button--disactive");
+        bgm_button_pause.classList.add("bgm__button--active");
       }
-    }
-    window.onresize = function () {
-      if (portraitMedia.matches == true) {
-        console.log('stop');
-        musicStop();
+
+      function musicPlay() {
+        if (audio.paused) {
+          audio.play();
+          bgm_button_play.classList.add("bgm__button--disactive");
+          bgm_button_pause.classList.add("bgm__button--active");
+          document.removeEventListener("click", musicPlay);
+        } else {
+          audio.pause();
+          audio.currentTime = 0;
+          bgm_button_play.classList.remove("bgm__button--disactive");
+          bgm_button_pause.classList.remove("bgm__button--active");
+        }
       }
-    };
-    bgm_button_play.addEventListener('click', musicPlay);
-    document.addEventListener('click', musicPlay);
-    bgm_button_pause.addEventListener('click', musicPlay);
+      window.onresize = function () {
+        if (portraitMedia.matches == true) {
+          console.log("stop");
+          musicStop();
+        }
+      };
+      bgm_button_play.addEventListener("click", musicPlay);
+      document.addEventListener("click", musicPlay);
+      bgm_button_pause.addEventListener("click", musicPlay);
 
-    //페이지 어디든지 클릭만 하게하면 음악재생
-    // function musicPlay(){
-    // document.getElementById('bgm').play();
-    // document.removeEventListener('click', musicPlay);
-    // }
-    // document.addEventListener('click', musicPlay);
-  </script>
-</body>
-
+      //페이지 어디든지 클릭만 하게하면 음악재생
+      // function musicPlay(){
+      // document.getElementById('bgm').play();
+      // document.removeEventListener('click', musicPlay);
+      // }
+      // document.addEventListener('click', musicPlay);
+    </script>
+  </body>
 </html>
