@@ -41,6 +41,112 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>Jeju Coding BaseCamp</title>
+    <!-- WENIV 통합 안내 모달 스타일 -->
+    <style>
+      .weniv-notice {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+      }
+      .weniv-notice.on {
+        display: block;
+      }
+      .weniv-notice__dim {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.55);
+      }
+      .weniv-notice__box {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: 420px;
+        box-sizing: border-box;
+        padding: 40px 30px 25px;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        font-family: "Nanum Gothic", sans-serif;
+      }
+      .weniv-notice__close {
+        position: absolute;
+        right: 12px;
+        top: 8px;
+        border: 0;
+        background: none;
+        font-size: 28px;
+        line-height: 1;
+        color: #aaa;
+        cursor: pointer;
+      }
+      .weniv-notice__close:hover {
+        color: #555;
+      }
+      .weniv-notice__logo {
+        width: 160px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+      .weniv-notice__title {
+        font-size: 20px;
+        font-weight: bold;
+        color: #222;
+        margin-bottom: 14px;
+      }
+      .weniv-notice__text {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 18px;
+      }
+      .weniv-notice__link {
+        display: inline-block;
+        padding: 10px 22px;
+        border-radius: 6px;
+        background-color: #2e6ff2;
+        color: #fff;
+        font-size: 15px;
+        text-decoration: none;
+      }
+      .weniv-notice__link:hover {
+        background-color: #1f57cc;
+      }
+      .weniv-notice__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 24px;
+        padding-top: 14px;
+        border-top: 1px solid #eee;
+      }
+      .weniv-notice__today {
+        font-size: 13px;
+        color: #888;
+        cursor: pointer;
+      }
+      .weniv-notice__ok {
+        border: 1px solid #ddd;
+        background-color: #fff;
+        border-radius: 6px;
+        padding: 6px 16px;
+        font-size: 13px;
+        color: #555;
+        cursor: pointer;
+      }
+      .weniv-notice__ok:hover {
+        background-color: #f5f5f5;
+      }
+    </style>
     <!--
   구글 Analytics 스크립트 삽입
   Global site tag (gtag.js) - Google Analytics
@@ -61,6 +167,30 @@
   </head>
 
   <body>
+    <!-- WENIV 통합 안내 모달 -->
+    <div id="weniv-notice" class="weniv-notice" role="dialog" aria-modal="true" aria-labelledby="weniv-notice-title">
+      <div class="weniv-notice__dim" onclick="closeWenivNotice()"></div>
+      <div class="weniv-notice__box">
+        <button type="button" class="weniv-notice__close" onclick="closeWenivNotice()" aria-label="닫기">&times;</button>
+        <img src="images/logo_weniv.svg" alt="WENIV 로고" class="weniv-notice__logo" />
+        <h2 id="weniv-notice-title" class="weniv-notice__title">안내 말씀 드립니다</h2>
+        <p class="weniv-notice__text">
+          바울랩은 <strong>WENIV(위니브)</strong>로 통합되어 운영됩니다.<br />
+          아래 링크에서 WENIV 홈페이지를 확인해 주세요.
+        </p>
+        <a href="https://www.weniv.co.kr" class="weniv-notice__link" target="_blank" rel="noopener">
+          https://www.weniv.co.kr
+        </a>
+        <div class="weniv-notice__footer">
+          <label class="weniv-notice__today">
+            <input type="checkbox" id="weniv-notice-today" /> 오늘 하루 보지 않기
+          </label>
+          <button type="button" class="weniv-notice__ok" onclick="closeWenivNotice()">닫기</button>
+        </div>
+      </div>
+    </div>
+    <!-- //WENIV 통합 안내 모달 -->
+
     <!-- 모바일 세로모드 적용 -->
     <div id="message">
       <div class="message__img">
@@ -321,6 +451,33 @@
     <!-- //모달 -->
 
     <script type="text/javascript">
+      // WENIV 통합 안내 모달
+      const wenivNotice = document.querySelector("#weniv-notice");
+      const wenivNoticeToday = document.querySelector("#weniv-notice-today");
+      const WENIV_NOTICE_KEY = "wenivNoticeHideUntil";
+
+      function closeWenivNotice() {
+        if (wenivNoticeToday.checked) {
+          const tomorrow = new Date();
+          tomorrow.setHours(24, 0, 0, 0);
+          localStorage.setItem(WENIV_NOTICE_KEY, tomorrow.getTime());
+        }
+        wenivNotice.classList.remove("on");
+      }
+
+      (function openWenivNotice() {
+        const hideUntil = Number(localStorage.getItem(WENIV_NOTICE_KEY));
+        if (hideUntil && Date.now() < hideUntil) return;
+        wenivNotice.classList.add("on");
+      })();
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          wenivNotice.classList.remove("on");
+        }
+      });
+      // //WENIV 통합 안내 모달
+
       const bird = document.querySelector(".bird");
       const modal = document.querySelector("#modal");
       function openModal() {
